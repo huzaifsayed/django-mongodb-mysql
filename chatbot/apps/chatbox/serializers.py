@@ -12,6 +12,11 @@ class ChatBoxAddSerializer(serializers.DocumentSerializer):
         model = models.Chatbox
         fields = '__all__'
 
+class ChatBoxComponentDisplaySerializer(serializers.DocumentSerializer):
+    class Meta:
+        model = models.Chatbox
+        fields = '__all__'
+
 class ChatBoxComponentAddSerializer(serializers.EmbeddedDocumentSerializer):
     class Meta:
         model = models.ChatboxComponent
